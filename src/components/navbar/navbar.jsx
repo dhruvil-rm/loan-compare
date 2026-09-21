@@ -37,6 +37,9 @@ function Navbar() {
           <Link to="/" onClick={() => setMenuOpen(false)}>
             Home
           </Link>
+          <Link to="/calculators" onClick={() => setMenuOpen(false)}>
+            Calculators
+          </Link>
           <Link to="/search" onClick={() => setMenuOpen(false)}>
             Compare Loans
           </Link>

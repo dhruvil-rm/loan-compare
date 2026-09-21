@@ -9,6 +9,8 @@ import BlogDetail from "./pages/blogdetail/blogdetail.jsx";
 import ItemDetail from "./pages/itemdetail/itemdetail.jsx";
 import LegalPage from "./pages/legal/legal.jsx";
 import Contact from "./pages/contact/contact.jsx";
+import Calculators from "./pages/calculators/calculators.jsx";
+import CalculatorPage from "./pages/calculator/calculator.jsx";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <main className="app-main">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/calculators" element={<Calculators />} />
+          <Route path="/calculators/:slug" element={<CalculatorPage />} />
           <Route path="/search" element={<Search />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />

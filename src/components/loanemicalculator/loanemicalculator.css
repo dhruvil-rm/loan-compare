@@ -1,0 +1,133 @@
+.emi-calc {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background: var(--bg-mint-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin: 20px 0 32px;
+}
+
+.emi-calc__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.emi-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.emi-field label {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--green-900);
+}
+
+.emi-field__input {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--white);
+  border: 1.5px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  padding: 0 12px;
+}
+
+.emi-field__input:focus-within,
+.emi-field select:focus-visible {
+  border-color: var(--green-600);
+  outline: 2px solid var(--green-100);
+}
+
+.emi-field__input input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  padding: 10px 0;
+  font-size: 1rem;
+  outline: none;
+}
+
+.emi-field select {
+  background: var(--white);
+  border: 1.5px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-size: 1rem;
+}
+
+.emi-field__slider {
+  width: 100%;
+  accent-color: var(--green-600);
+}
+
+.emi-calc__result {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.emi-calc__emi-label {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.emi-calc__emi {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--green-700);
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+.emi-calc__totals {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.emi-calc__totals div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--bg-mint);
+  padding-bottom: 8px;
+}
+
+.emi-calc__totals dt {
+  color: var(--text-muted);
+}
+
+.emi-calc__totals dd {
+  margin: 0;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+.emi-calc__error {
+  color: var(--orange-text);
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  .emi-calc {
+    grid-template-columns: 1fr 1fr;
+    padding: 28px;
+  }
+}
