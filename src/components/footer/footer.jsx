@@ -32,10 +32,6 @@ function Footer() {
             <p className="footer__proprietor">
               Proprietor: <strong>JITENDRA SURESHBHAI PAGHDAR</strong>
             </p>
-            <p className="footer__about">
-              IT and software services for growing businesses &mdash; managed IT support and
-              software applications, ready the moment you need it.
-            </p>
           </div>
 
           <div className="footer__contact">
