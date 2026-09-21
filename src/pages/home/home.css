@@ -1,0 +1,16 @@
+.home-recent {
+  background: var(--bg-mint);
+  padding: 52px 0;
+}
+
+.home-blog {
+  background: var(--white);
+  padding: 56px 0 68px;
+}
+
+@media (max-width: 640px) {
+  .home-recent,
+  .home-blog {
+    padding: 34px 0;
+  }
+}

@@ -1,0 +1,32 @@
+.loan-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.loan-filter__pill {
+  appearance: none;
+  background: var(--bg-mint-soft);
+  border: 1px solid var(--border-soft);
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  padding: 7px 16px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.loan-filter__pill:hover {
+  border-color: var(--green-600);
+  color: var(--green-700);
+}
+
+.loan-filter__pill--active,
+.loan-filter__pill--active:hover {
+  background: var(--green-600);
+  border-color: var(--green-600);
+  color: var(--white);
+}

@@ -1,0 +1,49 @@
+.footer {
+  background: var(--white);
+  border-top: 1px solid var(--border-soft);
+  padding: 36px 0 28px;
+  margin-top: auto;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.footer__nav a:hover,
+.footer__legal a:hover {
+  color: var(--green-600);
+}
+
+.footer__rule {
+  border: none;
+  border-top: 1px solid var(--border-soft);
+  margin: 26px 0 20px;
+}
+
+.footer__copy {
+  margin: 0 0 14px;
+  line-height: 1.6;
+}
+
+.footer__disclosure {
+  font-style: italic;
+  line-height: 1.65;
+  margin: 0 0 14px;
+}
+
+.footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.footer__legal li + li::before {
+  content: "\00b7";
+  margin: 0 8px;
+}

@@ -1,0 +1,138 @@
+.navbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border-soft);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 56px;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: auto;
+}
+
+.navbar__logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--green-600);
+  color: var(--green-600);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.navbar__search {
+  width: 224px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-mint-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-pill);
+  padding: 7px 14px;
+  transition: border-color 0.15s ease;
+}
+
+.navbar__search:focus-within {
+  border-color: var(--green-600);
+}
+
+.navbar__search-icon {
+  color: var(--text-faint);
+  font-size: 0.8rem;
+}
+
+.navbar__search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.86rem;
+  width: 100%;
+  color: var(--text-main);
+}
+
+.navbar__search input::placeholder {
+  color: var(--text-faint);
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.navbar__links a {
+  transition: color 0.15s ease;
+}
+
+.navbar__links a:hover {
+  color: var(--green-600);
+}
+
+.navbar__toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--text-main);
+  margin-left: auto;
+}
+
+@media (max-width: 680px) {
+  .navbar__inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    gap: 10px;
+  }
+
+  .navbar__logo {
+    margin-right: 0;
+  }
+
+  .navbar__search {
+    order: 3;
+    width: 100%;
+  }
+
+  .navbar__toggle {
+    display: block;
+  }
+
+  .navbar__links {
+    display: none;
+    width: 100%;
+    order: 4;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  .navbar__links--open {
+    display: flex;
+  }
+
+  .navbar__links a {
+    padding: 10px 4px;
+    border-top: 1px solid var(--border-soft);
+  }
+}
