@@ -50,7 +50,7 @@ export function LastUpdated() {
 export function LegalFooterLine() {
   return (
     <p className="legal__company">
-      &copy; {new Date().getFullYear()} 4ADS MEDIA LLC (L21000233395) &mdash; 5401 S Kirkman RD,
+      &copy; {new Date().getFullYear()} NOVAAPPS SOLUTIONS PRIVATE LIMITED (L21000233395) &mdash; 5401 S Kirkman RD,
       Suite 135 - Orlando, FL 32819
     </p>
   );
@@ -60,7 +60,7 @@ function LegalPage({ slug }) {
   const page = legalPages[slug];
 
   useEffect(() => {
-    if (page) document.title = `${page.title} — Jyncow`;
+    if (page) document.title = `${page.title} — NOVAAPPS SOLUTIONS PRIVATE LIMITED`;
   }, [page]);
 
   if (!page) return <Navigate to="/" replace />;

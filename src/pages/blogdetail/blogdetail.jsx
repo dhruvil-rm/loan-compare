@@ -60,7 +60,7 @@ function BlogDetail() {
           </div>
 
           <p className="blog-detail__disclosure">
-            Jyncow is an independent financial comparison platform. We may earn a commission
+            NOVAAPPS SOLUTIONS PRIVATE LIMITED is an independent financial comparison platform. We may earn a commission
             when you click through.
           </p>
 

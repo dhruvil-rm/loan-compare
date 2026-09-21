@@ -5,7 +5,7 @@
 // Inline syntax inside any text: **bold**, [label](/internal-path), [label](mailto:...),
 // and "\n" for a line break inside a paragraph.
 
-const EMAIL = "[contact@jyncow.com](mailto:contact@jyncow.com)";
+const EMAIL = "[contact@NOVAAPPS SOLUTIONS PRIVATE LIMITED.com](mailto:contact@NOVAAPPS SOLUTIONS PRIVATE LIMITED.com)";
 
 export const legalPages = {
   disclosure: {
@@ -28,7 +28,7 @@ export const legalPages = {
       { t: "p", x: "This website is published, operated, and promoted by:" },
       {
         t: "p",
-        x: `**4ADS MEDIA LLC**\nRegistered in Florida, US\nRegistration: L21000233395\nEIN: 37-2002466\n5401 S Kirkman RD, Suite 135 - Orlando, FL 32819\nContact: ${EMAIL}`,
+        x: `**NOVAAPPS SOLUTIONS PRIVATE LIMITED**\nRegistered in Florida, US\nRegistration: L21000233395\nEIN: 37-2002466\n5401 S Kirkman RD, Suite 135 - Orlando, FL 32819\nContact: ${EMAIL}`,
       },
       { t: "h2", x: "How We Make Money" },
       { t: "h3", x: "Display Advertising" },
@@ -60,7 +60,7 @@ export const legalPages = {
       { t: "h2", x: "Our Mission" },
       {
         t: "p",
-        x: "Jyncow helps you find and compare personal loans, credit options, and financial products. We believe everyone deserves access to clear, unbiased information to make better decisions.",
+        x: "NOVAAPPS SOLUTIONS PRIVATE LIMITED helps you find and compare personal loans, credit options, and financial products. We believe everyone deserves access to clear, unbiased information to make better decisions.",
       },
       { t: "h2", x: "What We Do" },
       {
@@ -69,7 +69,7 @@ export const legalPages = {
       },
       {
         t: "p",
-        x: "**Jyncow** \u2014 We help you compare personal loan offers from multiple lenders, so you can find the best rates and terms for your financial needs.",
+        x: "**NOVAAPPS SOLUTIONS PRIVATE LIMITED** \u2014 We help you compare personal loan offers from multiple lenders, so you can find the best rates and terms for your financial needs.",
       },
       { t: "h2", x: "Our Team" },
       {
@@ -83,7 +83,7 @@ export const legalPages = {
       { t: "h2", x: "How We Stay Free" },
       {
         t: "p",
-        x: "Jyncow is free to use. We fund our operations through display advertising and affiliate partnerships. When you interact with links on our site, we may earn a commission \u2014 at no extra cost to you.",
+        x: "NOVAAPPS SOLUTIONS PRIVATE LIMITED is free to use. We fund our operations through display advertising and affiliate partnerships. When you interact with links on our site, we may earn a commission \u2014 at no extra cost to you.",
       },
       {
         t: "p",
@@ -92,7 +92,7 @@ export const legalPages = {
       { t: "h2", x: "Where We Are" },
       {
         t: "p",
-        x: `**4ADS MEDIA LLC**\nFlorida, US\n5401 S Kirkman RD, Suite 135 - Orlando, FL 32819\n${EMAIL}`,
+        x: `**NOVAAPPS SOLUTIONS PRIVATE LIMITED**\nFlorida, US\n5401 S Kirkman RD, Suite 135 - Orlando, FL 32819\n${EMAIL}`,
       },
     ],
   },
@@ -100,12 +100,12 @@ export const legalPages = {
   privacy: {
     title: "Privacy Policy",
     intro:
-      "This Privacy Policy describes how 4ADS MEDIA LLC collects, uses, and protects your personal information when you visit jyncow.com.",
+      "This Privacy Policy describes how NOVAAPPS SOLUTIONS PRIVATE LIMITED collects, uses, and protects your personal information when you visit NOVAAPPS SOLUTIONS PRIVATE LIMITED.com.",
     blocks: [
       { t: "h2", x: "What We Do" },
       {
         t: "p",
-        x: "**Jyncow** \u2014 We help you compare personal loan offers from multiple lenders, so you can find the best rates and terms for your financial needs.",
+        x: "**NOVAAPPS SOLUTIONS PRIVATE LIMITED** \u2014 We help you compare personal loan offers from multiple lenders, so you can find the best rates and terms for your financial needs.",
       },
       { t: "h2", x: "Aggregator Disclaimer" },
       {
@@ -124,7 +124,7 @@ export const legalPages = {
       { t: "h2", x: "Scope" },
       {
         t: "p",
-        x: "This Privacy Policy applies solely to information collected through jyncow.com. Our site may contain links to third-party websites, which have their own privacy policies. We are not responsible for the privacy practices of those sites.",
+        x: "This Privacy Policy applies solely to information collected through NOVAAPPS SOLUTIONS PRIVATE LIMITED.com. Our site may contain links to third-party websites, which have their own privacy policies. We are not responsible for the privacy practices of those sites.",
       },
       { t: "h2", x: "Consent" },
       {
@@ -247,12 +247,12 @@ export const legalPages = {
 
   terms: {
     title: "Terms of Use",
-    intro: "Welcome to jyncow.com. This website is published and operated by 4ADS MEDIA LLC.",
+    intro: "Welcome to NOVAAPPS SOLUTIONS PRIVATE LIMITED.com. This website is published and operated by NOVAAPPS SOLUTIONS PRIVATE LIMITED.",
     blocks: [
       { t: "h2", x: "About the Platform" },
       {
         t: "p",
-        x: "**Jyncow** \u2014 We help you compare personal loan offers from multiple lenders, so you can find the best rates and terms for your financial needs.",
+        x: "**NOVAAPPS SOLUTIONS PRIVATE LIMITED** \u2014 We help you compare personal loan offers from multiple lenders, so you can find the best rates and terms for your financial needs.",
       },
       {
         t: "p",
@@ -266,7 +266,7 @@ export const legalPages = {
       { t: "h2", x: "Copyright" },
       {
         t: "p",
-        x: "All content on this website, including text, graphics, logos, and software, is the property of 4ADS MEDIA LLC or its content suppliers and is protected by international copyright laws. Unauthorized reproduction is prohibited.",
+        x: "All content on this website, including text, graphics, logos, and software, is the property of NOVAAPPS SOLUTIONS PRIVATE LIMITED or its content suppliers and is protected by international copyright laws. Unauthorized reproduction is prohibited.",
       },
       { t: "h2", x: "Article I \u2014 User Agreement" },
       {
@@ -299,7 +299,7 @@ export const legalPages = {
       { t: "h2", x: "Article IV \u2014 Limitation of Liability" },
       {
         t: "p",
-        x: "To the fullest extent permitted by applicable law, 4ADS MEDIA LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use this website.",
+        x: "To the fullest extent permitted by applicable law, NOVAAPPS SOLUTIONS PRIVATE LIMITED shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use this website.",
       },
       {
         t: "p",
@@ -325,7 +325,7 @@ export const legalPages = {
   editorial: {
     title: "Editorial Policy",
     intro:
-      "Jyncow is an independent financial comparison platform. We are committed to providing accurate, useful, and transparent content to help you make informed decisions.",
+      "NOVAAPPS SOLUTIONS PRIVATE LIMITED is an independent financial comparison platform. We are committed to providing accurate, useful, and transparent content to help you make informed decisions.",
     blocks: [
       { t: "h2", x: "I. How We Produce Content" },
       {

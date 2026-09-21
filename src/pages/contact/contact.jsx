@@ -11,7 +11,7 @@ function Contact() {
   const [status, setStatus] = useState("idle"); // idle | sending | sent
 
   useEffect(() => {
-    document.title = "Contact Us — Jyncow";
+    document.title = "Contact Us — NOVAAPPS SOLUTIONS PRIVATE LIMITED";
   }, []);
 
   function handleChange(e) {
@@ -46,7 +46,7 @@ function Contact() {
               at the email address you provided.
             </p>
             <p>
-              Return to <Link to="/">Jyncow</Link>.
+              Return to <Link to="/">NOVAAPPS SOLUTIONS PRIVATE LIMITED</Link>.
             </p>
           </div>
         ) : (
@@ -57,7 +57,7 @@ function Contact() {
             </p>
             <p>
               You can also email us directly at{" "}
-              <a href="mailto:contact@jyncow.com">contact@jyncow.com</a>.
+              <a href="mailto:contact@NOVAAPPS SOLUTIONS PRIVATE LIMITED.com">contact@NOVAAPPS SOLUTIONS PRIVATE LIMITED.com</a>.
             </p>
 
             <form className="contact__form" onSubmit={handleSubmit}>

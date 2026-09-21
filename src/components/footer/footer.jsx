@@ -24,7 +24,7 @@ function Footer() {
         <hr className="footer__rule" />
 
         <p className="footer__copy">
-          &copy; {year} Jyncow. Published and operated by 4ADS MEDIA LLC, registered in
+          &copy; {year} NOVAAPPS SOLUTIONS PRIVATE LIMITED. Published and operated by NOVAAPPS SOLUTIONS PRIVATE LIMITED, registered in
           Florida, US (L21000233395), EIN 37-2002466, 5401 S Kirkman RD, Suite 135 - Orlando,
           FL 32819.
         </p>
