@@ -102,7 +102,7 @@ export const legalPages = {
   privacy: {
     title: "Privacy Policy",
     intro:
-      "This Privacy Policy describes how ON-TAP SOLUTION collects, uses, and protects your personal information when you visit loanmathpro.com.",
+      "This Privacy Policy describes how ON-TAP SOLUTION collects, uses, and protects your personal information when you visit loanmathpro.com. Please note that ON-TAP SOLUTION is a software and information provider and does not provide any financial services.",
     blocks: [
       { t: "h2", x: "What We Do" },
       {
@@ -117,6 +117,26 @@ export const legalPages = {
       {
         t: "p",
         x: "Our editorial process and compensation structure are described in our [Advertising Disclosure](/disclosure) and [Editorial Policy](/editorial).",
+      },
+      { t: "h2", x: "No Financial Services Provided" },
+      {
+        t: "p",
+        x: "**ON-TAP SOLUTION does not provide loans, lending, credit, financial advice, or any other financial services.** We are not a bank, a Non-Banking Financial Company (NBFC), a lending service provider, a loan agent, or a financial advisor, and we are not registered with or regulated by the Reserve Bank of India (RBI) as a financial institution.",
+      },
+      {
+        t: "p",
+        x: "The Loan EMI Calculator and the other tools on this website are software calculation tools provided for general information and illustration only. Results shown by these tools are estimates, are not a loan offer, sanction, or approval, and must not be treated as financial, investment, legal, or tax advice.",
+      },
+      { t: "p", x: "Accordingly:" },
+      {
+        t: "ul",
+        items: [
+          "We do not accept, process, or evaluate loan applications, and we do not make any credit decisions.",
+          "We do not collect, hold, transfer, or manage your money, deposits, or repayments.",
+          "We do not ask for, and you should not submit to us, sensitive financial information such as bank account details, card numbers, PINs, passwords, or OTPs.",
+          "Any loan or financial product you choose to explore is offered solely by the respective third-party lender, and any application, KYC, data collection, or agreement takes place on that lender's own website or app under its own terms and privacy policy.",
+          "Please consult a qualified financial professional and read the lender's terms carefully before making any borrowing or financial decision.",
+        ],
       },
       { t: "h2", x: "Your Privacy Matters" },
       {
