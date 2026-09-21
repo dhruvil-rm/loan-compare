@@ -19,7 +19,8 @@ function Navbar() {
     <header className="navbar">
       <div className="container navbar__inner">
         <Link to="/" className="navbar__logo" aria-label="ON-TAP SOLUTION home">
-          <span className="navbar__logo-mark">$</span>
+          <img className="navbar__logo-img" src="/logo.png" alt="" />
+          <span className="navbar__logo-text">ON-TAP SOLUTION</span>
         </Link>
 
         <form className="navbar__search" onSubmit={handleSearch}>
