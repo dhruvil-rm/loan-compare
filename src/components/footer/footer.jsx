@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDroplet, faPhone, faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import "./footer.css";
 
 const legalLinks = [
@@ -16,6 +18,53 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container">
+        <div className="footer__top">
+          <div className="footer__brand">
+            <div className="footer__brand-head">
+              <span className="footer__brand-mark">
+                <FontAwesomeIcon icon={faDroplet} />
+              </span>
+              <div>
+                <div className="footer__brand-name">ON-TAP SOLUTION</div>
+                <div className="footer__brand-sub">IT &amp; SOFTWARE SERVICES</div>
+              </div>
+            </div>
+            <p className="footer__proprietor">
+              Proprietor: <strong>JITENDRA SURESHBHAI PAGHDAR</strong>
+            </p>
+            <p className="footer__about">
+              IT and software services for growing businesses &mdash; managed IT support and
+              software applications, ready the moment you need it.
+            </p>
+          </div>
+
+          <div className="footer__contact">
+            <h3>Get in touch</h3>
+            <ul>
+              <li>
+                <FontAwesomeIcon icon={faPhone} />
+                <a href="tel:+917405246374">7405246374</a>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faEnvelope} />
+                <a href="mailto:admin@jitendrasureshbhaipaghdar.com">
+                  admin@jitendrasureshbhaipaghdar.com
+                </a>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faLocationDot} />
+                <address>
+                  GROUND FLOOR, 282, SARITANAGAR SOCIETY, PUNA GAM
+                  <br />
+                  CHORASI, Surat, Gujarat, 395010
+                </address>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr className="footer__rule" />
+
         <nav className="footer__nav">
           <Link to="/search">Browse All</Link>
           <Link to="/blog">Articles</Link>
@@ -24,9 +73,9 @@ function Footer() {
         <hr className="footer__rule" />
 
         <p className="footer__copy">
-          &copy; {year} NOVAAPPS SOLUTIONS PRIVATE LIMITED. Published and operated by NOVAAPPS SOLUTIONS PRIVATE LIMITED, registered in
-          Florida, US (L21000233395), EIN 37-2002466, 5401 S Kirkman RD, Suite 135 - Orlando,
-          FL 32819.
+          &copy; {year} ON-TAP SOLUTION. Published and operated by ON-TAP SOLUTION (Proprietor:
+          JITENDRA SURESHBHAI PAGHDAR), Ground Floor, 282, Saritanagar Society, Puna Gam,
+          Chorasi, Surat, Gujarat, 395010.
         </p>
 
         <p className="footer__disclosure">
@@ -44,6 +93,17 @@ function Footer() {
             </li>
           ))}
         </ul>
+
+        <hr className="footer__rule" />
+
+        <p className="footer__notice">
+          ON-TAP SOLUTION does not provide loans, lending, credit, financial advice, or other
+          financial services. The Loan EMI Calculator is only a software calculation tool.
+        </p>
+        <p className="footer__operated">
+          &copy; {year} ON-TAP SOLUTION &mdash; Operated by JITENDRA SURESHBHAI PAGHDAR
+          (Proprietor). All rights reserved.
+        </p>
       </div>
     </footer>
   );

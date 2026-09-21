@@ -1,4 +1,4 @@
-# NOVAAPPS SOLUTIONS PRIVATE LIMITED-style Loan Comparison Website
+# ON-TAP SOLUTION-style Loan Comparison Website
 
 React + Vite clone of the loan-comparison site UI (personal / auto / student loans),
 built as a fully dynamic, data-driven, responsive app.

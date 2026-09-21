@@ -5,7 +5,7 @@ export const blogPosts = [
     title: "Choosing the Right Car Loan This June",
     excerpt: "Compare top car loans and find the best fit for your needs",
     date: "Jun 29, 2026",
-    author: "NOVAAPPS SOLUTIONS PRIVATE LIMITED Editorial Team",
+    author: "ON-TAP SOLUTION Editorial Team",
     image: "/images/blog/1.webp",
     illustration: "compare",
     body: [
@@ -29,7 +29,7 @@ export const blogPosts = [
     title: "Debunking Personal Loan Myths: What You Need to Know",
     excerpt: "Uncover the truth behind common personal loan misconceptions",
     date: "Jun 25, 2026",
-    author: "NOVAAPPS SOLUTIONS PRIVATE LIMITED Editorial Team",
+    author: "ON-TAP SOLUTION Editorial Team",
     image: "/images/blog/2.webp",
     illustration: "myths",
     body: [
@@ -53,7 +53,7 @@ export const blogPosts = [
     title: "The Best Car Loans This June: HDFC vs ICICI vs Axis",
     excerpt: "Compare top auto loan options for June, focusing on rates and speed.",
     date: "Jun 24, 2026",
-    author: "NOVAAPPS SOLUTIONS PRIVATE LIMITED Editorial Team",
+    author: "ON-TAP SOLUTION Editorial Team",
     image: "/images/blog/3.webp",
     illustration: "carcompare",
     groups: [
@@ -109,7 +109,7 @@ export const blogPosts = [
     title: "Choosing Your Next Car Loan: Key Picks for June",
     excerpt: "Explore top car finance options with transparent rates and quick approvals",
     date: "Jun 23, 2026",
-    author: "NOVAAPPS SOLUTIONS PRIVATE LIMITED Editorial Team",
+    author: "ON-TAP SOLUTION Editorial Team",
     image: "/images/blog/4.webp",
     illustration: "keypicks",
     body: [
@@ -133,7 +133,7 @@ export const blogPosts = [
     title: "Choosing the Best Car Loan for June 2026",
     excerpt: "Find the top car loans with competitive rates this summer",
     date: "Jun 22, 2026",
-    author: "NOVAAPPS SOLUTIONS PRIVATE LIMITED Editorial Team",
+    author: "ON-TAP SOLUTION Editorial Team",
     image: "/images/blog/5.webp",
     illustration: "bestcarloan",
     quickPicks: [

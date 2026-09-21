@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="container navbar__inner">
-        <Link to="/" className="navbar__logo" aria-label="NOVAAPPS SOLUTIONS PRIVATE LIMITED home">
+        <Link to="/" className="navbar__logo" aria-label="ON-TAP SOLUTION home">
           <span className="navbar__logo-mark">$</span>
         </Link>
 
