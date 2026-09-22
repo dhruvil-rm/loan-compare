@@ -36,8 +36,6 @@ const featureCards = [
   },
 ];
 
-// Hero tabs -> real /search filters (the search page only knows
-// personal / auto / student categories and a sort option).
 const tabFilters = {
   personal: { loan_type: "personal" },
   express: { loan_type: "personal", sort: "fast" },
@@ -52,8 +50,9 @@ function Hero() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    const params = new URLSearchParams(tabFilters[activeType] || {});
-    if (query.trim()) params.set("q", query.trim());
+    const trimmed = query.trim();
+    const params = new URLSearchParams(trimmed ? {} : tabFilters[activeType] || {});
+    if (trimmed) params.set("q", trimmed);
     const qs = params.toString();
     navigate(`/search${qs ? `?${qs}` : ""}`);
   }

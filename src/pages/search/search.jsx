@@ -27,9 +27,8 @@ function tenureMax(loan) {
   return nums ? Math.max(...nums.map(Number)) : 0;
 }
 
-function searchScore(loan, tokens) {
-  if (tokens.length === 0) return 1;
-  const hay = [
+function loanHaystack(loan) {
+  return [
     loan.name,
     loan.lender,
     loan.tagline,
@@ -40,9 +39,15 @@ function searchScore(loan, tokens) {
     loan.category,
     ...(loan.requirements || []),
   ]
+    .filter(Boolean)
     .join(" ")
     .toLowerCase();
-  return tokens.reduce((n, t) => (hay.includes(t) ? n + 1 : n), 0);
+}
+
+function matchesQuery(loan, tokens) {
+  if (tokens.length === 0) return true;
+  const hay = loanHaystack(loan);
+  return tokens.every((t) => hay.includes(t));
 }
 
 function Search() {
@@ -74,19 +79,17 @@ function Search() {
       .split(/[^a-z0-9]+/)
       .filter((t) => t.length > 2 && !STOP_WORDS.has(t));
 
-    const list = loans
-      .map((loan) => ({ loan, score: searchScore(loan, tokens) }))
-      .filter(({ loan, score }) => {
-        const matchesCategory = activeCategory === "all" || loan.category === activeCategory;
-        return matchesCategory && loan.amountMax >= amount && score > 0;
-      });
+    const list = loans.filter((loan) => {
+      const matchesCategory = activeCategory === "all" || loan.category === activeCategory;
+      const withinAmount = (loan.amountMin ?? 0) <= amount && loan.amountMax >= amount;
+      return matchesCategory && withinAmount && matchesQuery(loan, tokens);
+    });
 
-    if (sort === "apr") list.sort((a, b) => a.loan.aprMin - b.loan.aprMin);
-    else if (sort === "fast") list.sort((a, b) => speedRank(a.loan) - speedRank(b.loan));
-    else if (sort === "tenure") list.sort((a, b) => tenureMax(b.loan) - tenureMax(a.loan));
-    else if (tokens.length) list.sort((a, b) => b.score - a.score);
+    if (sort === "apr") list.sort((a, b) => a.aprMin - b.aprMin);
+    else if (sort === "fast") list.sort((a, b) => speedRank(a) - speedRank(b));
+    else if (sort === "tenure") list.sort((a, b) => tenureMax(b) - tenureMax(a));
 
-    return list.map((x) => x.loan);
+    return list;
   }, [activeCategory, amount, query, sort]);
 
   const pct = ((amount - MIN_AMOUNT) / (MAX_AMOUNT - MIN_AMOUNT)) * 100;
