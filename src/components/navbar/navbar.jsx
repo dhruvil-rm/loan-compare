@@ -19,7 +19,7 @@ function Navbar() {
     <header className="navbar">
       <div className="container navbar__inner">
         <Link to="/" className="navbar__logo" aria-label="ON-TAP SOLUTION home">
-          <img className="navbar__logo-img" src="/logo.png" alt="" />
+          <img className="navbar__logo-img" src="/logo-sm.png" alt="" width="60" height="40" />
           <span className="navbar__logo-text">LOAN-MATH-PRO</span>
         </Link>
 
@@ -43,9 +43,9 @@ function Navbar() {
           <Link to="/search" onClick={() => setMenuOpen(false)}>
             Compare Loans
           </Link>
-          <Link to="/blog" onClick={() => setMenuOpen(false)}>
+          <a href="/blog/" onClick={() => setMenuOpen(false)}>
             Blog
-          </Link>
+          </a>
         </nav>
 
         <button

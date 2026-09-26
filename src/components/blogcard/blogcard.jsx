@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faChartLine, faCarSide, faScaleBalanced } from "@fortawesome/free-solid-svg-icons";
 import "./blogcard.css";
@@ -34,19 +33,19 @@ function BlogMedia({ post }) {
 function BlogCard({ post, featured = false }) {
   return (
     <article className={`blog-card ${featured ? "blog-card--featured" : ""}`}>
-      <Link to={`/blog/${post.slug}`} className="blog-card__media">
+      <a href={`/blog/${post.slug}/`} className="blog-card__media">
         <BlogMedia post={post} />
-      </Link>
+      </a>
       <div className="blog-card__body">
         <span className="blog-card__category">{post.category}</span>
         <h3 className="blog-card__title">
-          <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+          <a href={`/blog/${post.slug}/`}>{post.title}</a>
         </h3>
         <p className="blog-card__excerpt">{post.excerpt}</p>
         {featured && <span className="blog-card__date">{post.date}</span>}
-        <Link to={`/blog/${post.slug}`} className="blog-card__link">
+        <a href={`/blog/${post.slug}/`} className="blog-card__link">
           Read more <FontAwesomeIcon icon={faArrowRight} />
-        </Link>
+        </a>
       </div>
     </article>
   );

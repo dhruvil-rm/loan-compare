@@ -4,8 +4,6 @@ import Footer from "./components/footer/footer.jsx";
 import ScrollToTop from "./components/scrolltotop/scrolltotop.jsx";
 import Home from "./pages/home/home.jsx";
 import Search from "./pages/search/search.jsx";
-import Blog from "./pages/blog/blog.jsx";
-import BlogDetail from "./pages/blogdetail/blogdetail.jsx";
 import ItemDetail from "./pages/itemdetail/itemdetail.jsx";
 import LegalPage from "./pages/legal/legal.jsx";
 import Contact from "./pages/contact/contact.jsx";
@@ -23,8 +21,6 @@ function App() {
           <Route path="/calculators" element={<Calculators />} />
           <Route path="/calculators/:slug" element={<CalculatorPage />} />
           <Route path="/search" element={<Search />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/item/:id" element={<ItemDetail />} />
           <Route path="/disclosure" element={<LegalPage slug="disclosure" />} />
           <Route path="/about" element={<LegalPage slug="about" />} />

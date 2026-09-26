@@ -63,7 +63,7 @@ function Footer() {
 
         <nav className="footer__nav">
           <Link to="/search">Browse All</Link>
-          <Link to="/blog">Articles</Link>
+          <a href="/blog/">Articles</a>
         </nav>
 
         <hr className="footer__rule" />
