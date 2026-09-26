@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import LoanCard from "../../components/loancard/loancard.jsx";
 import LoanFilter from "../../components/loanfilter/loanfilter.jsx";
+import DisplayAd from "../../components/Ads/DisplayAd.jsx";
 import { loans, categories } from "../../data/loans.js";
 import "./search.css";
 
@@ -93,6 +94,8 @@ function Search() {
   }, [activeCategory, amount, query, sort]);
 
   const pct = ((amount - MIN_AMOUNT) / (MAX_AMOUNT - MIN_AMOUNT)) * 100;
+  const firstBatch = results.slice(0, 6);
+  const remainingBatch = results.slice(6);
 
   return (
     <section className="search-page">
@@ -155,11 +158,53 @@ function Search() {
             No loans match these filters yet. Try a lower amount or a different category.
           </p>
         ) : (
-          <div className="search-page__grid card-grid">
-            {results.map((loan) => (
-              <LoanCard key={loan.id} loan={loan} />
-            ))}
-          </div>
+          <>
+            <center className="pills">Advertisement</center>
+            <DisplayAd
+              adUnitPath="/23345011043/loanmathpro.com/dis-4"
+              size={[300, 250]}
+              divId="ad-top"
+              sizeMapping={[
+                [[1024, 0], [[728, 90], [468, 60], [336, 280], [300, 250]]],
+                [[768, 0], [[468, 60], [300, 250], [320, 100]]],
+                [[0, 0], [[300, 250], [320, 50]]],
+              ]}
+              style={{
+                margin: "30px auto",
+              }}
+            />
+
+            <div className="search-page__grid card-grid">
+              {firstBatch.map((loan) => (
+                <LoanCard key={loan.id} loan={loan} />
+              ))}
+            </div>
+
+            {remainingBatch.length > 0 && (
+              <>
+                <center className="pills">Advertisement</center>
+                <DisplayAd
+                  adUnitPath="/23345011043/loanmathpro.com/dis-5"
+                  size={[300, 250]}
+                  divId="ad-mid"
+                  sizeMapping={[
+                    [[1024, 0], [[728, 90], [468, 60], [336, 280], [300, 250]]],
+                    [[768, 0], [[468, 60], [300, 250], [320, 100]]],
+                    [[0, 0], [[300, 250], [320, 50]]],
+                  ]}
+                  style={{
+                    margin: "30px auto",
+                  }}
+                />
+
+                <div className="search-page__grid card-grid">
+                  {remainingBatch.map((loan) => (
+                    <LoanCard key={loan.id} loan={loan} />
+                  ))}
+                </div>
+              </>
+            )}
+          </>
         )}
       </div>
     </section>

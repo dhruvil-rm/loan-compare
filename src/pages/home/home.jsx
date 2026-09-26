@@ -3,6 +3,7 @@ import LoanCard from "../../components/loancard/loancard.jsx";
 import BlogCard from "../../components/blogcard/blogcard.jsx";
 import { getLoanById } from "../../data/loans.js";
 import { blogPosts } from "../../data/blogPosts.js";
+import DisplayAd from "../../components/Ads/DisplayAd.jsx"
 import "./home.css";
 
 // Matches the "Recently added" order seen on the live site.
@@ -32,6 +33,8 @@ const recentlyAddedOrder = [
 function Home() {
   const recentlyAdded = recentlyAddedOrder.map(getLoanById).filter(Boolean);
   const latestBlogPosts = blogPosts.slice(0, 3);
+  const firstBatch = recentlyAdded.slice(0, 6);
+  const remainingBatch = recentlyAdded.slice(6);
 
   return (
     <>
@@ -41,10 +44,35 @@ function Home() {
         <div className="container">
           <h2 className="section-title">Recently added</h2>
           <div className="home-recent__grid card-grid">
-            {recentlyAdded.map((loan) => (
+            {firstBatch.map((loan) => (
               <LoanCard key={loan.id} loan={loan} />
             ))}
           </div>
+
+          {remainingBatch.length > 0 && (
+            <>
+              <center className="pills">Advertisement</center>
+              <DisplayAd
+                adUnitPath="/23345011043/loanmathpro.com/dis-2"
+                size={[300, 250]}
+                divId="ad-mid"
+                sizeMapping={[
+                  [[1024, 0], [[728, 90], [468, 60], [336, 280], [300, 250]]],
+                  [[768, 0], [[468, 60], [300, 250], [320, 100]]],
+                  [[0, 0], [[300, 250], [320, 50]]],
+                ]}
+                style={{
+                  margin: "30px auto",
+                }}
+              />
+
+              <div className="home-recent__grid card-grid">
+                {remainingBatch.map((loan) => (
+                  <LoanCard key={loan.id} loan={loan} />
+                ))}
+              </div>
+            </>
+          )}
         </div>
       </section>
 
@@ -58,6 +86,21 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <center className="pills">Advertisement</center>
+      <DisplayAd
+        adUnitPath="/23345011043/loanmathpro.com/dis-3"
+        size={[300, 250]}
+        divId="ad-bottom"
+        sizeMapping={[
+          [[1024, 0], [[728, 90], [468, 60], [336, 280], [300, 250]]],
+          [[768, 0], [[468, 60], [300, 250], [320, 100]]],
+          [[0, 0], [[300, 250], [320, 50]]],
+        ]}
+        style={{
+          margin: "30px auto",
+        }}
+      />
     </>
   );
 }

@@ -1,10 +1,10 @@
 import { Link, Navigate, useParams } from "react-router-dom";
 import LoanEmiCalculator from "../../components/loanemicalculator/loanemicalculator.jsx";
 import usePageMeta from "../../hooks/usePageMeta.js";
+import DisplayAd from "../../components/Ads/DisplayAd.jsx";
 import { getCalculator } from "../../data/calculators.js";
 import "./calculator.css";
 
-// kind -> component. Later phases add the other calculator kinds here.
 const components = {
   emi: LoanEmiCalculator,
 };
@@ -26,6 +26,21 @@ function CalculatorPage() {
 
         <h1 className="calc-page__title">{calc.title}</h1>
         <p className="calc-page__intro">{calc.intro}</p>
+
+        <center className="pills">Advertisement</center>
+        <DisplayAd
+          adUnitPath="/23345011043/loanmathpro.com/dis-6"
+          size={[300, 250]}
+          divId="ad-top"
+          sizeMapping={[
+            [[1024, 0], [[728, 90], [468, 60], [336, 280], [300, 250]]],
+            [[768, 0], [[468, 60], [300, 250], [320, 100]]],
+            [[0, 0], [[300, 250], [320, 50]]],
+          ]}
+          style={{
+            margin: "30px auto",
+          }}
+        />
 
         <Tool {...calc.props} />
 
@@ -51,6 +66,21 @@ function CalculatorPage() {
         <p className="calc-page__note">
           Results are estimates for informational and educational purposes only, not financial advice.
         </p>
+
+        <center className="pills">Advertisement</center>
+        <DisplayAd
+          adUnitPath="/23345011043/loanmathpro.com/dis-7"
+          size={[300, 250]}
+          divId="ad-mid"
+          sizeMapping={[
+            [[1024, 0], [[728, 90], [468, 60], [336, 280], [300, 250]]],
+            [[768, 0], [[468, 60], [300, 250], [320, 100]]],
+            [[0, 0], [[300, 250], [320, 50]]],
+          ]}
+          style={{
+            margin: "30px auto",
+          }}
+        />
       </div>
     </article>
   );

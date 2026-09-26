@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faArrowRight, faCalculator } from "@fortawesome/free-solid-svg-icons";
 import usePageMeta from "../../hooks/usePageMeta.js";
 import { calculators, calculatorCategories } from "../../data/calculators.js";
+import DisplayAd from "../../components/Ads/DisplayAd.jsx"
 import "./calculators.css";
 
 function Calculators() {
@@ -60,6 +61,21 @@ function Calculators() {
           </div>
         </div>
 
+        <center className="pills">Advertisement</center>
+        <DisplayAd
+          adUnitPath="/23345011043/loanmathpro.com/dis-1"
+          size={[300, 250]}
+          divId="ad-top"
+          sizeMapping={[
+            [[1024, 0], [[728, 90], [468, 60], [336, 280], [300, 250]]],
+            [[768, 0], [[468, 60], [300, 250], [320, 100]]],
+            [[0, 0], [[300, 250], [320, 50]]],
+          ]}
+          style={{
+            margin: "30px auto",
+          }}
+        />
+
         {visible.length ? (
           <ul className="calcs__grid card-grid">
             {visible.map((c) => (
@@ -83,6 +99,22 @@ function Calculators() {
           </p>
         )}
       </div>
+
+      <center className="pills">Advertisement</center>
+      <DisplayAd
+        adUnitPath="/23345011043/loanmathpro.com/dis-2"
+        size={[300, 250]}
+        divId="ad-mid"
+        sizeMapping={[
+          [[1024, 0], [[728, 90], [468, 60], [336, 280], [300, 250]]],
+          [[768, 0], [[468, 60], [300, 250], [320, 100]]],
+          [[0, 0], [[300, 250], [320, 50]]],
+        ]}
+        style={{
+          margin: "30px auto",
+        }}
+      />
+
     </section>
   );
 }

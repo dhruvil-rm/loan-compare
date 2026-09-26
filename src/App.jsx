@@ -9,11 +9,16 @@ import LegalPage from "./pages/legal/legal.jsx";
 import Contact from "./pages/contact/contact.jsx";
 import Calculators from "./pages/calculators/calculators.jsx";
 import CalculatorPage from "./pages/calculator/calculator.jsx";
+import InterstitialAd from "./components/Ads/InterstitialAd";
+import AnchorAd from "./components/Ads/AnchorAd";
 
 function App() {
   return (
     <div className="app-shell">
       <ScrollToTop />
+      <InterstitialAd adUnitPath="23345011043/loanmathpro.com/inter" />
+
+      <AnchorAd adUnitPath="23345011043/loanmathpro.com/anchor" isTop={false} />
       <Navbar />
       <main className="app-main">
         <Routes>

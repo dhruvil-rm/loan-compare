@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import LoanFilter from "../loanfilter/loanfilter.jsx";
 import { loanTypeTabs } from "../../data/loans.js";
+import DisplayAd from "../../components/Ads/DisplayAd.jsx"
 import "./hero.css";
 
 const featureCards = [
@@ -85,6 +86,21 @@ function Hero() {
               Find Loans <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </div>
+
+          <center className="pills">Advertisement</center>
+          <DisplayAd
+            adUnitPath="/23345011043/loanmathpro.com/dis-1"
+            size={[300, 250]}
+            divId="ad-top"
+            sizeMapping={[
+              [[1024, 0], [[728, 90], [468, 60], [336, 280], [300, 250]]],
+              [[768, 0], [[468, 60], [300, 250], [320, 100]]],
+              [[0, 0], [[300, 250], [320, 50]]],
+            ]}
+            style={{
+              margin: "30px auto",
+            }}
+          />
         </form>
 
         <div className="hero__feature-grid">

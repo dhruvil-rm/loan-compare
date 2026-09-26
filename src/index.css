@@ -162,6 +162,10 @@ img {
   color: var(--white);
 }
 
+.pills{
+  margin-top: 10px;
+}
+
 @media (max-width: 960px) {
   .container {
     padding: 0 20px;
